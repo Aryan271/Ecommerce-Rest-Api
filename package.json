@@ -9,6 +9,7 @@
     "start-server": "nodemon server.js --ignore './client/'",
     "dev": "nodemon -r esm server.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "Aryan",
   "license": "ISC",
