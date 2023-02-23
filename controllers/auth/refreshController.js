@@ -1,7 +1,7 @@
 import Joi from "joi";
 import { REFRESH_SECRET } from "../../config/index.js";
 import { RefreshToken, User } from "../../models/index.js";
-import CustomErrorHandler from "../../services/customErrorHandler";
+import CustomErrorHandler from "../../services/customErrorHandler.js";
 import JwtService from "../../services/JwtService.js";
 
 const refreshController = {
