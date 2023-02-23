@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { APP_URL } from "../config";
+import { APP_URL } from "../config/index.js";
 
 const Schema = mongoose.Schema;
 

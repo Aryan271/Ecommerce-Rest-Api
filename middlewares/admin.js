@@ -1,4 +1,4 @@
-import { User } from "../models";
+import { User } from "../models/index.js";
 import CustomErrorHandler from "../services/customErrorHandler.js";
 
 const admin = async (req, res, next) => {

@@ -1,15 +1,16 @@
 import express from "express";
 const router = express.Router();
+
 import {
   registerController,
   loginController,
   userController,
   refreshController,
   productController,
-} from "../controllers";
+} from "../controllers/index.js";
 
-import auth from "../middlewares/auth";
-import admin from "../middlewares/admin";
+import auth from "../middlewares/auth.js";
+import admin from "../middlewares/admin.js";
 
 // auth routes
 router.post("/register", registerController.register);

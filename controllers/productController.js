@@ -1,8 +1,8 @@
-import { Product } from "../models";
-import productSchema from "../validators/productValidator";
+import { Product } from "../models/index.js";
+import productSchema from "../validators/productValidator.js";
 import multer from "multer";
 import path from "path";
-import CustomErrorHandler from "../services/CustomErrorHandler";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
 import fs from "fs";
 
 const storage = multer.diskStorage({
