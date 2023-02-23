@@ -1,6 +1,6 @@
 import express from "express";
-import { APP_PORT, DB_URL, CLOUD_DB_URL } from "./config";
-import routes from "./routes";
+import { APP_PORT, DB_URL, CLOUD_DB_URL } from "./config/index.js";
+import routes from "./routes/index.js";
 import mongoose from "mongoose";
 import path from "path";
 
