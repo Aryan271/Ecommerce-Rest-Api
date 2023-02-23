@@ -1,5 +1,5 @@
 import express from "express";
-import { APP_PORT, DB_URL, CLOUD_DB_URL } from "./config/index.js";
+import { APP_PORT, CLOUD_DB_URL } from "./config/index.js";
 import routes from "./routes/index.js";
 import mongoose from "mongoose";
 import path from "path";
@@ -21,7 +21,7 @@ db.once("open", () => {
 });
 
 const app = express();
-
+const PORT = process.env.PORT || APP_PORT;
 // global variable in node
 import { fileURLToPath } from "url";
 import { dirname } from "path";
@@ -44,4 +44,4 @@ app.use("/api", routes);
 // serves static route of uploads
 app.use("/uploads", express.static("uploads"));
 
-app.listen(APP_PORT, () => console.log(`Listening on port ${APP_PORT}.`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}.`));
