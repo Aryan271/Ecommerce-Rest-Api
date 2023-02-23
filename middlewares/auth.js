@@ -1,4 +1,4 @@
-import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import CustomErrorHandler from "../services/customErrorHandler.js";
 import JwtService from "../services/JwtService.js";
 
 const auth = async (req, res, next) => {

@@ -1,5 +1,5 @@
 import { User } from "../../models/index.js";
-import CustomErrorHandler from "../../services/CustomErrorHandler.js";
+import CustomErrorHandler from "../../services/customErrorHandler";
 
 const userController = {
   async me(req, res, next) {

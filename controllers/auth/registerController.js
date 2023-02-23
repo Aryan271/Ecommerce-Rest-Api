@@ -2,7 +2,7 @@ import Joi from "joi";
 import { User, RefreshToken } from "../../models/index.js";
 import bcrypt from "bcrypt";
 import JwtService from "../../services/JwtService.js";
-import CustomErrorHandler from "../../services/CustomErrorHandler.js";
+import CustomErrorHandler from "../../services/customErrorHandler";
 import { REFRESH_SECRET } from "../../config/index.js";
 
 const registerController = {
