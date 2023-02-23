@@ -23,6 +23,12 @@ db.once("open", () => {
 const app = express();
 
 // global variable in node
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 global.appRoot = path.resolve(__dirname);
 
 app.use(cors());
