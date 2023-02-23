@@ -48,6 +48,6 @@ app.use(express.json());
 app.use("/api", routes);
 
 // serves static route of uploads
-app.use("/uploads", express.static("uploads"));
+app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}.`));
